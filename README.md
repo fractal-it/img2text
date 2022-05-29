@@ -1,2 +1,3 @@
-# img2text
-Image to text
+# Image to text
+
+to use install pillow and color-it
