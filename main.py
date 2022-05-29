@@ -59,5 +59,5 @@ for y in range(img.size[1]):
     imgtxt.append("\n")
     print()
 
-with open("img.txt", "w") as f:
+with open("img.txt", "w", encoding='utf-8') as f:
     f.write("".join(imgtxt))
