@@ -19,6 +19,7 @@ img = img.resize((x, y))
 imgtxt = []
 
 gm = ["=", "░", "▒", "▓"] * 4  # gamma
+# gm = ["L", "T", "U", "M"] * 4  # 2 gamma ver
 # gm = ["L", "0", "░", "®", "#", "▒", "M", "▓"] * 2  # full gamma (bugs)
 pg = [
     ra(p),
