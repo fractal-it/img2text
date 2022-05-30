@@ -20,7 +20,6 @@ imgtxt = []
 
 gm = ["=", "░", "▒", "▓"] * 4  # gamma
 # gm = ['L', 'J', '7', 'C', 'V', 'T', 'Y', 'U', 'A', 'X', 'S', 'O', 'D', 'P', 'K', 'M']  # 2 gamma ver
-# gm = ["L", "0", "░", "®", "#", "▒", "M", "▓"] * 2  # full gamma (bugs)
 pg = [
     ra(p),
     ra(p, p * 2),
