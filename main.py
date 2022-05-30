@@ -11,8 +11,10 @@ ra = range
 img = Image.open(input("Enter image name: "))
 print(f"Standart size = {img.size}.")
 
-x = int(input("Please, enter width (more than 100 is not recommended): "))
-y = int(input("Please, enter height (more than 100 is not recommended): "))
+x = int(round(eval(input("Please, enter width (more than 100 is not recommended): "))))
+print(x)
+y = int(round(eval(input("Please, enter height (more than 100 is not recommended): "))))
+print(y)
 
 img = img.resize((x, y))
 
