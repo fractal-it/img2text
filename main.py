@@ -20,6 +20,7 @@ imgtxt = []
 
 gm = ["=", "░", "▒", "▓"] * 4  # gamma
 # gm = ['L', 'J', '7', 'C', 'V', 'T', 'Y', 'U', 'A', 'X', 'S', 'O', 'D', 'P', 'K', 'M']  # 2 gamma ver
+# gm = list(".:=/r(l1Z4H9W8$@")  # 3 gamma ver
 pg = [
     ra(p),
     ra(p, p * 2),
