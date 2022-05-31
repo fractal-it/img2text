@@ -2,6 +2,8 @@
 from PIL import Image
 from colorit import color as cl
 
+print("https://GitHub.com/vAPGHv/img2text")
+
 p = 16  # pixel
 
 isbreak = 0
@@ -20,9 +22,22 @@ img = img.resize((x, y))
 
 imgtxt = []
 
-gm = ["=", "░", "▒", "▓"] * 4  # gamma
-# gm = ['L', 'J', '7', 'C', 'V', 'T', 'Y', 'U', 'A', 'X', 'S', 'O', 'D', 'P', 'K', 'M']  # 2 gamma ver
-# gm = list(".:=/r(l1Z4H9W8$@")  # 3 gamma ver
+gn = input(
+    "Please, enter gamma name \n 1 - (=, ░, ▒, ▓)\n 2 - (L, J, 7, C, V, T, Y, U, A, X, S, O, D, P, K, M)\n 3 - (., :, =, /, r, (, l, 1, Z, 4, H, 9, W, 8, $, @)\n: ")
+
+gm1 = ["=", "░", "▒", "▓"] * 4  # gamma
+gm2 = ['L', 'J', '7', 'C', 'V', 'T', 'Y', 'U', 'A', 'X', 'S', 'O', 'D', 'P', 'K', 'M']  # 2 gamma ver
+gm3 = list(".:=/r(l1Z4H9W8$@")  # 3 gamma ver
+
+if gn == "1":
+    gm = gm1
+elif gn == "2":
+    gm = gm2
+elif gn == "3":
+    gm = gm3
+else:
+    raise "You enter any number!"
+
 pg = [
     ra(p),
     ra(p, p * 2),
@@ -53,6 +68,11 @@ for y in range(img.size[1]):
                 if pixc2 < i:
                     imgtxt.append(gm[n])
                     print(cl(gm[n], pixc), end="")
+                    isbreak = 1
+                    break
+                elif pixc2 >= 255:
+                    imgtxt.append("@")
+                    print(cl("@", pixc), end="")
                     isbreak = 1
                     break
 
