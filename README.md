@@ -2,4 +2,4 @@
 <h3>monospace fonts are recommended!</h3>
 to use install pillow and color-it
 
-pip install color-yt pillow
+pip install color-it pillow
