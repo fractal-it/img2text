@@ -1,5 +1,5 @@
 # Image to text
 <h3>monospace fonts are recommended!</h3>
-to use install pillow and color-it
+to use install pillow
 
-pip install color-it pillow
+pip install pillow
